@@ -117,7 +117,7 @@ async function getQuakes() {
       span.style.backgroundColor = '#f2d3d3';
       li.style.backgroundColor = '#f2e6e6';
       alert(
-        `${quake.title}'da ${quake.mag} büyüklüğünde deprem oldu (${quake.date})`
+        `${quake.title} konumunda ${quake.mag} büyüklüğünde deprem oldu (${quake.date})`
       );
     } else if (quake.mag >= 4) {
       span.style.color = 'orange';
@@ -163,4 +163,4 @@ async function getQuakes() {
   });
 }
 
-getQuakes();
+setInterval(getQuakes(), 60000);
