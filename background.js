@@ -115,9 +115,6 @@ async function getQuakes() {
     if (quake.mag >= 5) {
       span.style.color = 'red';
       span.style.backgroundColor = '#f2d3d3';
-      span.style.padding = '0 5px';
-      span.style.borderRadius = '3px';
-      span.style.width = '100%';
       li.style.backgroundColor = '#f2e6e6';
       alert(
         `${quake.title}'da ${quake.mag} büyüklüğünde deprem oldu (${quake.date})`
@@ -125,19 +122,14 @@ async function getQuakes() {
     } else if (quake.mag >= 4) {
       span.style.color = 'orange';
       span.style.backgroundColor = '#f2e8d3';
-      span.style.padding = '0 5px';
-      span.style.borderRadius = '3px';
       li.style.backgroundColor = '#f2eee6';
     } else if (quake.mag >= 3) {
       span.style.color = 'blue';
       span.style.backgroundColor = '#d3e8f2';
-      span.style.padding = '0 5px';
-      span.style.borderRadius = '3px';
       li.style.backgroundColor = '#e6f2f2';
     } else {
       span.style.color = 'green';
       span.style.backgroundColor = '#d3f2d3';
-      span.style.borderRadius = '3px';
       li.style.backgroundColor = '#e6f2e6';
     }
 
@@ -146,15 +138,15 @@ async function getQuakes() {
     }
 
     span.style.alignSelf = 'center';
-    span.style.padding = '10px 2px';
+    span.style.padding = '10px 0';
     span.style.userSelect = 'none';
     span.style.textAlign = 'center';
     span.style.maxWidth = '70px';
+    span.style.borderRadius = '3px';
 
     li.style.alignSelf = 'center';
     li.style.display = 'flex';
     li.style.justifyContent = 'space-between';
-    li.style.height = '100%';
     li.style.alignItems = 'center';
     li.style.cursor = 'pointer';
 
