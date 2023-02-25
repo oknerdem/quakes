@@ -1,0 +1,15 @@
+{
+  "name": "Son 150 Deprem - Turkiye",
+  "version": "0.2.0",
+  "description": "Turkiye son depremler",
+  "manifest_version": 3,
+  "author": "Okan",
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Quakes - Turkiye"
+  }
+}
