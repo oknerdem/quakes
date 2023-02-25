@@ -4,7 +4,7 @@ Turkiye'de meydana gelen son 150 depremi, kandilli rasathanesinden aldigi verile
 
 ## Chromium tabanli tarayicilar icin
 
-1. Chromium tarayicisini acin.
+1. Chromium tabanli tarayicinizi acin.
 2. chrome://extensions/ adresine gidin.
 3. "Developer mode" kutucugunu isaretleyin.
 4. "Load unpacked extension..." butonuna tiklayin.
