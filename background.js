@@ -3,7 +3,6 @@ const title = document.querySelector('#title');
 const input = document.querySelector('#input');
 const form = document.querySelector('#form');
 const reset = document.querySelector('#reset');
-const notFound = document.querySelector('#notfound');
 
 const count = 150;
 const numbers = [1, 2, 3, 4, 5, 6, 7];

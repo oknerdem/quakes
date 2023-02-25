@@ -140,9 +140,3 @@ button:hover {
 button:active {
   opacity: 0.5;
 }
-
-#notfound {
-  display: none;
-  text-align: center;
-  font-weight: 600;
-}
