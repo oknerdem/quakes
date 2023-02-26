@@ -57,6 +57,15 @@ const months = [
   },
 ];
 
+input.focus();
+
+form.addEventListener('keydown', e => {
+  if (e.key === 'r' && e.ctrlKey) {
+    e.preventDefault();
+    reset.click();
+  }
+});
+
 async function getQuakes() {
   const response = await fetch(
     'https://api.orhanaydogdu.com.tr/deprem/kandilli/live'
