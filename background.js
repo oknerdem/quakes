@@ -171,4 +171,4 @@ async function getQuakes() {
   });
 }
 
-setInterval(getQuakes(), 60000);
+getQuakes();
