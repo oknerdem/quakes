@@ -2,6 +2,7 @@ const textArea = document.querySelector('#text');
 const title = document.querySelector('#title');
 const input = document.querySelector('#input');
 const form = document.querySelector('#form');
+const search = document.querySelector('#search');
 const reset = document.querySelector('#reset');
 
 const count = 150;
@@ -101,6 +102,10 @@ async function getQuakes() {
       } else {
         li.style.display = 'none';
       }
+    });
+
+    search.addEventListener('click', () => {
+      input.focus();
     });
 
     reset.addEventListener('click', () => {
