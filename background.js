@@ -114,54 +114,36 @@ async function getQuakes() {
       input.focus();
     });
 
-    const realYear = date.split('.')[0];
     const realMonth = date.split('.')[1];
     const today = new Date();
     const todayDay = today.getDate();
 
     months.forEach(month => {
       if (month.number === realMonth) {
-        title.textContent = todayDay + ' ' + month.name + ' ' + realYear;
+        title.textContent = todayDay + ' ' + month.name;
       }
     });
 
     if (quake.mag >= 5) {
-      span.style.color = 'red';
-      span.style.backgroundColor = '#f2d3d3';
-      li.style.backgroundColor = '#f2e6e6';
       alert(
         `${quake.title} konumunda ${quake.mag} büyüklüğünde deprem oldu (${quake.date})`
       );
+      li.classList.add('five');
+      span.classList.add('fivespan');
     } else if (quake.mag >= 4) {
-      span.style.color = 'orange';
-      span.style.backgroundColor = '#f2e8d3';
-      li.style.backgroundColor = '#f2eee6';
+      li.classList.add('four');
+      span.classList.add('fourspan');
     } else if (quake.mag >= 3) {
-      span.style.color = 'blue';
-      span.style.backgroundColor = '#d3e8f2';
-      li.style.backgroundColor = '#e6f2f2';
+      li.classList.add('three');
+      span.classList.add('threespan');
     } else {
-      span.style.color = 'green';
-      span.style.backgroundColor = '#d3f2d3';
-      li.style.backgroundColor = '#e6f2e6';
+      li.classList.add('two');
+      span.classList.add('twospan');
     }
 
     if (numbers.includes(quake.mag)) {
       span.textContent = quake.mag + '.0 ' + date.split(' ')[1];
     }
-
-    span.style.alignSelf = 'center';
-    span.style.padding = '10px 0';
-    span.style.userSelect = 'none';
-    span.style.textAlign = 'center';
-    span.style.maxWidth = '70px';
-    span.style.borderRadius = '3px';
-
-    li.style.alignSelf = 'center';
-    li.style.display = 'flex';
-    li.style.justifyContent = 'space-between';
-    li.style.alignItems = 'center';
-    li.style.cursor = 'pointer';
 
     li.textContent = quake.title;
     li.appendChild(span);

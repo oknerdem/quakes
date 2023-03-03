@@ -68,6 +68,9 @@ li {
   border: 1px solid #ccc;
   border-radius: 0.2rem;
   transition-duration: 0.1s;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 li:hover {
@@ -135,4 +138,49 @@ button:hover {
 
 button:active {
   opacity: 0.5;
+}
+
+span {
+  align-self: center;
+  padding: 10px 0;
+  user-select: none;
+  text-align: center;
+  max-width: 70px;
+  border-radius: 3px;
+}
+
+.five {
+  background-color: #f2e6e6;
+}
+
+.fivespan {
+  color: red;
+  background-color: #f2d3d3;
+}
+
+.four {
+  background-color: #f2eee6;
+}
+
+.fourspan {
+  color: orange;
+  background-color: #f2e8d3;
+}
+
+.three {
+  background-color: #e6f2f2;
+}
+
+.threespan {
+  color: blue;
+  background-color: #d3e8f2;
+}
+
+.two {
+  background-color: #e6f2e6;
+}
+
+.twospan {
+  color: green;
+  background-color: #d3f2d3;
 }
