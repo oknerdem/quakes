@@ -1,3 +1,4 @@
+(!!! hala calisiyor mu bilmiyorum)
 Turkiye'de meydana gelen son 150 depremi, kandilli rasathanesinden aldigi veriler dogrultusunda gosteren ve chromium tabanli tum tarayicilarda kullanilabilecek basit fonksiyonlara sahip tarayici eklentisi.
 
 ## Chromium tabanli tarayicilar icin kurulum adimlari
